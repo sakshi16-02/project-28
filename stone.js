@@ -9,7 +9,7 @@ class Stone{
 		this.x=x;
 		this.y=y;
 		this.r=r;
-        this.image = loadImage("Plucking_mangoes/stone.png");
+        this.image = loadImage("images/stone.png");
 		this.body=Bodies.circle(x, y, this.r, options);
 		World.add(world, this.body);
 	}
