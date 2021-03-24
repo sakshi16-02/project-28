@@ -11,7 +11,7 @@ var boy,boyImg;
 
 function preload()
 {
-	boyImg = loadImage("Plucking_mangoes/boy.png");
+	boyImg = loadImage("images/boy.png");
 }
 
 function setup() {
@@ -25,13 +25,13 @@ function setup() {
 	boy = createSprite(200,550);
 	boy.addImage(boyImg);
 	boy.scale = 0.1;
-	tree = new Tree(900,350,30,300);
+	tree = new Tree(900,600,30,300);
 	ground = new Ground(600,600,2000,20);
 	mango1 = new Mango(900,250,15);
 	mango2 = new Mango(800,200,15);
-	mango3 = new Mango(800,280,15);
+	mango3 = new Mango(850,280,15);
 	mango4 = new Mango(1000,250,15);
-	mango5 = new Mango(670,300,15);
+	mango5 = new Mango(770,280,15);
 	stone = new Stone(150,550,15);
 	boyShot = new Shot(stone.body,{x:150,y:500});
 	Engine.run(engine);
